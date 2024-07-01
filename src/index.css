@@ -2,14 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.fontfam
+{
+    font-family: 'Playfair Display', serif;
+
+}
 .navy-blue{
     background-color: #1A1A40;
 }
 
 .gold{ 
-    background-color: #D4AF37;
+    background-color: #F76B1C;
 }
 
+.orange{
+    background-color: #F69838;
+}
 .charcoal-gray{ 
     background-color: #4B4B4B;
 }
