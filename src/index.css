@@ -43,6 +43,18 @@
         rgba(0, 0, 0, 0)
       ) 1 100%;
   }
+  .join-button {
+    background: linear-gradient(to right, #F69838, #D87A1D);
+  }
+  
+  .join-button:hover {
+    background: linear-gradient(to right, #D87A1D, #F69838);
+    transform: scale(1.05);
+  }
+  
+  .join-button:active {
+    transform: scale(0.95);
+  }
     
       
       
