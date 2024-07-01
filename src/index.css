@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navy-blue{
+    background-color: #1A1A40;
+}
+
+.gold{ 
+    background-color: #D4AF37;
+}
+
+.charcoal-gray{ 
+    background-color: #4B4B4B;
+}
+
+.ivory{ 
+    background-color: #FFFFF0;
+}
+
+.deep-burgundy{ 
+    background-color: #800020;
+}
+
+.slate-gray{ 
+    background-color: #708090;
+}
