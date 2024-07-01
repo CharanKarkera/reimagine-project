@@ -1,5 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { FaShoppingCart } from "react-icons/fa";
+import { IoPersonCircleSharp } from "react-icons/io5";
 
 const NAV_ITEMS = [
   {
@@ -48,11 +50,13 @@ const basic = [
 const second = [
   {
     label: "Profile",
-    href: "/login",
+    href: "/profile",
+    tag:<IoPersonCircleSharp/>
   },
   {
     label: "Cart",
-    href: "/signup",
+    href: "/cart",
+    tag:<FaShoppingCart/>
   },
 ];
 const Navbar = () => {
@@ -61,17 +65,25 @@ const Navbar = () => {
   return (
     <nav className="flex flex-col justify-center text-xl items-center navy-blue text-[ivory]">
       <div className="flex justify-between w-full fontfam m-0 p-0">
-        <div className="flex pl-3">{basic.map((item, index) => (
-                <a className=" hover:scale-105 p-3 hover:bg-gradient-to-b h-[60px] hover:from-[orange] w-[100px] flex justify-center" key={index} href={item.href}>
+        <div className="flex pl-3 gap-[3px]">{basic.map((item, index) => (
+                <a className={`hover:scale-105 p-3 hover:bg-gradient-to-b h-[60px] hover:from-[orange] w-[100px] flex justify-center ${
+                  index === 0 ? 'module' : ''
+                }`} key={index} href={item.href}>
                 {item.label}
               </a>
             ))}</div><img src="/logo.png" alt="Meesho" className="h-[20%] w-[20%] p-5 hover:scale-105"/>
-        <div className="flex pr-3">{login && first.map((item, index) => (
-              <a className=" hover:scale-105 p-3 hover:bg-gradient-to-b  h-[60px] hover:from-[orange]  w-[100px] flex justify-center" key={index} href={item.href}>
+        <div className="flex pr-3  gap-[3px]">{login && first.map((item, index) => (
+              <a className={`hover:scale-105 p-3 hover:bg-gradient-to-b h-[60px] hover:from-[orange] w-[100px] flex justify-center ${
+                index === 0 ? 'module' : ''
+              }`} key={index} href={item.href}>
+                
                 {item.label}
               </a>
             ))}{!login && second.map((item, index) => (
-              <a  className=" hover:scale-105 p-3 hover:bg-gradient-to-b h-[60px] hover:from-[orange]  w-[100px] flex justify-center" key={index} href={item.href}>
+              <a  className={`hover:scale-105 p-3 hover:bg-gradient-to-b h-[60px] hover:from-[orange] w-[100px] flex justify-center ${
+                index === 0 ? 'module' : ''
+              }`} key={index} href={item.href}>
+                {item.tag}
                 {item.label}
               </a>
             ))}</div>
