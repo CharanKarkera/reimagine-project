@@ -33,6 +33,9 @@
 .slate-gray{ 
     background-color: #708090;
 }
+.mod{
+  border-right:1px solid orange;
+}
 
 .module {
     border-right:1px solid white;
@@ -43,6 +46,7 @@
         rgba(0, 0, 0, 0)
       ) 1 100%;
   }
+ 
   .join-button {
     background: linear-gradient(to right, #F69838, #D87A1D);
   }
@@ -72,6 +76,10 @@
   background-size: cover;
   background-position: center;
 }
+.radial-gradient {
+  background: radial-gradient(circle at center, #1A1A40, #000000);
+}
+
 
     
       
