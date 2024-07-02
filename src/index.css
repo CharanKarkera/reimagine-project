@@ -2,14 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.fontfam
+{
+    font-family: 'Playfair Display', serif;
+
+}
 .navy-blue{
     background-color: #1A1A40;
 }
 
 .gold{ 
-    background-color: #D4AF37;
+    background-color: #F76B1C;
 }
 
+.orange{
+    background-color: #F69838;
+}
 .charcoal-gray{ 
     background-color: #4B4B4B;
 }
@@ -25,3 +33,47 @@
 .slate-gray{ 
     background-color: #708090;
 }
+
+.module {
+    border-right:1px solid white;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        white, 
+        rgba(0, 0, 0, 0)
+      ) 1 100%;
+  }
+  .join-button {
+    background: linear-gradient(to right, #F69838, #D87A1D);
+  }
+  
+  .join-button:hover {
+    background: linear-gradient(to right, #D87A1D, #F69838);
+    transform: scale(1.05);
+  }
+  
+  .join-button:active {
+    transform: scale(0.95);
+  }
+  .gradient-hover:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #F69838, #D87A1D);
+    opacity: 0.7;
+    z-index: 1;
+    pointer-events: none;
+}
+.featurebg {
+  background-image: url('/featured-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+    
+      
+      
+  
