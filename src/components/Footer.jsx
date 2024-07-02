@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="navy-blue relative bottom-0 w-full overflow-hidden">
-      <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-5 pt-10 pb-5 px-10 sm:px-20 mx-32 fontfam ">
+      <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-5 pt-10 pb-5 px-10 sm:px-20 md::mx-32 fontfam ">
         <div className="text-[orange] flex items-center hover:scale-105 transition duration-300 ease-in-out">
           <img src="/logo-1.png" alt="Meesho" className=" h-10" />
           <span className="text-xl">Meesho</span>
@@ -22,14 +22,14 @@ const Footer = () => {
           </span>
         </div>
       </div>
-      <hr className="border-[charcoal-gray] mx-44" />
-      <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-5 py-10 px-10 sm:px-20 mx-28 fontfam ">
-        <span className="text-[ivory] hover:scale-105 hover:text-[orange] transition ease-out w-1/3">
+      <hr className="border-[charcoal-gray] mx-10 md::mx-44" />
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-5 pt-5 pb-10 sm:py-10 px-10 sm:px-20 md::mx-28 fontfam ">
+        <span className="text-[ivory] hover:scale-105 hover:text-[orange] transition ease-out md:w-1/3">
           © 2024 Meesho. All Rights Reserved.
         </span>
-        <div className="flex justify-end gap-10 w-full">
+        <div className="flex justify-center md:justify-end gap-10 md:w-full">
           <svg
-            className="h-5 w-5 text-white hover:text-[orange] transition ease-out "
+            className="h-5 w-5 text-white hover:text-[orange] transition ease-out hover:scale-105"
             fill="currentColor"
             viewBox="0 0 24 24"
             aria-hidden="true"
@@ -41,7 +41,7 @@ const Footer = () => {
             />
           </svg>
           <svg
-            className="h-5 w-5 text-white hover:text-[orange] transition ease-out "
+            className="h-5 w-5 text-white hover:text-[orange] transition ease-out hover:scale-105"
             fill="currentColor"
             viewBox="0 0 24 24"
             aria-hidden="true"
@@ -53,7 +53,7 @@ const Footer = () => {
             />
           </svg>
           <svg
-            className="h-5 w-5 text-white hover:text-[orange] transition ease-out "
+            className="h-5 w-5 text-white hover:text-[orange] transition ease-out hover:scale-105"
             fill="currentColor"
             viewBox="0 0 24 24"
             aria-hidden="true"
