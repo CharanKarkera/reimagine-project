@@ -10,7 +10,7 @@ const Featured = () => {
     setHoveredImages(images);
   };
   return (
-    <div className="h-screen flex justify-around">
+    <div className="h-screen flex justify-evenly items-center gap-[50px]">
       <div className="flex flex-col w-1/3 bg-gray-200 p-8 rounded-lg">
         <div className="bg-white flex rounded-lg border border-gray-300 h-9 items-center gap-5 hover:bg-gray-100 transition-colors duration-300">
           <FaMagnifyingGlass className="text-gray-600 m-2" />

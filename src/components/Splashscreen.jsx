@@ -6,7 +6,7 @@ const SplashScreen = ({ onVideoEnd }) => {
   useEffect(() => {
     if (videoEnded) {
       onVideoEnd();
-      localStorage.setItem("splashScreenShown", "true");
+      sessionStorage.setItem("splashScreenShown", "true");
     }
   }, [videoEnded, onVideoEnd]);
 

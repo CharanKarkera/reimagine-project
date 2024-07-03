@@ -16,7 +16,7 @@ const App = () => {
   const [isVideoEnded, setIsVideoEnded] = useState(false);
 
   useEffect(() => {
-    const splashScreenShown = localStorage.getItem("splashScreenShown");
+    const splashScreenShown = sessionStorage.getItem("splashScreenShown");
     if (splashScreenShown) {
       setIsVideoEnded(true);
     }
