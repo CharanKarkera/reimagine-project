@@ -1,12 +1,11 @@
 import React from "react";
-import Product from "../components/Product";
-import products from "../constants/data";
+import Featured from "../components/Featured";
 
 const Home = () => {
-  console.log(products);
+  // console.log(products);
   return (
-    <section className="min-h-[75vh] ivory">
-      <Product product={products[0]} />
+    <section className="min-h-[75vh] ivory featurebg ">
+      <Featured />
     </section>
   );
 };

@@ -1,4 +1,4 @@
-const products = [
+export const products = [
   {
     title: "Product 1",
     price: "1000",
@@ -10,4 +10,53 @@ const products = [
   },
 ];
 
-export default products;
+export const categories = [
+  {
+    label: "Jewellery & Acessories",
+    href: "/",
+    pic: "/womenethnic.jpeg",
+    caraousel: ["/womenethnic.jpeg", "/logo-1.png", "/logo-2.png"],
+  },
+  {
+    label: "Women Ethnic",
+    href: "/",
+    pic: "/womenethnic.jpeg",
+    caraousel: ["/womenethnic.jpeg", "/logo-1.png", "/logo-2.png"],
+  },
+  {
+    label: "Women western",
+    href: "/",
+    pic: "/womenethnic.jpeg",
+    caraousel: ["/womenethnic.jpeg", "/logo-1.png", "/logo-2.png"],
+  },
+  {
+    label: "Mens Ethnic",
+    href: "/",
+    pic: "/womenethnic.jpeg",
+    caraousel: ["/womenethnic.jpeg", "/logo-1.png", "/logo-2.png"],
+  },
+  {
+    label: "Mens Casuals",
+    href: "/",
+    pic: "/womenethnic.jpeg",
+    caraousel: ["/womenethnic.jpeg", "/logo-1.png", "/logo-2.png"],
+  },
+  {
+    label: "Kids",
+    href: "/",
+    pic: "/womenethnic.jpeg",
+    caraousel: ["/womenethnic.jpeg", "/logo-1.png", "/logo-2.png"],
+  },
+  {
+    label: "Toys & Acessories",
+    href: "/",
+    pic: "/womenethnic.jpeg",
+    caraousel: ["/womenethnic.jpeg", "/logo-1.png", "/logo-2.png"],
+  },
+  {
+    label: "Bags & Footwear",
+    href: "/",
+    pic: "/womenethnic.jpeg",
+    caraousel: ["/womenethnic.jpeg", "/logo-1.png", "/logo-2.png"],
+  },
+];

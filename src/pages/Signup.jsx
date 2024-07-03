@@ -1,6 +1,7 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 const Signup = () => {
+  const navigate = useNavigate();
   return (
     <section className="min-h-[75vh] flex flex-col items-center justify-center ivory">
       <form className="navy-blue hover:bg-[#21214f] rounded-xl p-10 sm:p-14  fontfam text-[ivory] min-h-[40vh] flex flex-col gap-10 shadow-lg shadow-gray-600 w-fit">
@@ -51,7 +52,10 @@ const Signup = () => {
         </article>
         <button
           type="submit"
-          onClick={(e) => e.preventDefault()}
+          onClick={(e) => {
+            e.preventDefault();
+            navigate("/login");
+          }}
           className="text-2xl p-3 rounded-xl bg-[orange] hover:bg-[#D87A1D] transition ease-out"
         >
           SignUp

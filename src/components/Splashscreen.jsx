@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const SplashScreen = ({ onVideoEnd }) => {
   const [videoEnded, setVideoEnded] = useState(false);
@@ -6,6 +6,7 @@ const SplashScreen = ({ onVideoEnd }) => {
   useEffect(() => {
     if (videoEnded) {
       onVideoEnd();
+      localStorage.setItem("splashScreenShown", "true");
     }
   }, [videoEnded, onVideoEnd]);
 
