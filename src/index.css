@@ -76,10 +76,20 @@
   background-image: url('/featured-bg.jpeg');
   background-size: cover;
   background-position: center;
+
 }
 .radial-gradient {
   background: radial-gradient(circle at center, #1A1A40, #000000);
 }
+.cardback {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F1E9D2 50%, #D0C2A8 100%);
+}
+
+
+
+
+
+
 
 
     

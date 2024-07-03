@@ -10,6 +10,7 @@ import SplashScreen from "./components/Splashscreen";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Home from "./pages/Home";
+import Items from "./components/Items";
 
 const App = () => {
   const [isVideoEnded, setIsVideoEnded] = useState(false);
@@ -29,18 +30,18 @@ const App = () => {
     <Router>
       {!isVideoEnded && <SplashScreen onVideoEnd={handleVideoEnd} />}
       {isVideoEnded && (
-        <div>
-          <Navbar />
-          <main>
-            <Routes>
-              <Route path="/home" element={<Home />} />
-              <Route path="/" element={<Home />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/signup" element={<Signup />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
+       <div>
+       <Navbar />
+       <main>
+         <Routes>
+           <Route path="/" element={<Featured />} />
+           <Route path="/home" element={<Home />} />
+           <Route path="/login" element={<Login />} />
+           <Route path="/signup" element={<Signup />} />
+         </Routes>
+       </main>
+       <Footer />
+     </div>
       )}
     </Router>
   );
