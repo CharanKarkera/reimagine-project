@@ -1,4 +1,4 @@
-import React , { useState} from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Components
@@ -15,25 +15,34 @@ import Items from "./components/Items";
 const App = () => {
   const [isVideoEnded, setIsVideoEnded] = useState(false);
 
+  useEffect(() => {
+    const splashScreenShown = localStorage.getItem("splashScreenShown");
+    if (splashScreenShown) {
+      setIsVideoEnded(true);
+    }
+  }, []);
+
   const handleVideoEnd = () => {
     setIsVideoEnded(true);
   };
 
   return (
     <Router>
-      <div>
-        <Navbar />
-        <main>
-          <Routes>
-            <Route path="/" element={<Featured />} />
-            <Route path="/items" element={<Items />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      {!isVideoEnded && <SplashScreen onVideoEnd={handleVideoEnd} />}
+      {isVideoEnded && (
+       <div>
+       <Navbar />
+       <main>
+         <Routes>
+           <Route path="/" element={<Featured />} />
+           <Route path="/home" element={<Home />} />
+           <Route path="/login" element={<Login />} />
+           <Route path="/signup" element={<Signup />} />
+         </Routes>
+       </main>
+       <Footer />
+     </div>
+      )}
     </Router>
   );
 };
