@@ -6,42 +6,42 @@ const cats = [
   {
     label: "Jewellery & Accessories",
     pic: <img src="/womenethnic.jpeg" className="rounded-full h-10 w-10 shadow-custom-shadow" />,
-    href: "/"
+    href: "/items"
   },
   {
     label: "Women Ethnic",
     pic: <img src="/womenethnic.jpeg" className="rounded-full h-10 w-10 shadow-custom-shadow" />,
-    href: "/"
+    href: "/items"
   },
   {
     label: "Women Western",
     pic: <img src="/womenethnic.jpeg" className="rounded-full h-10 w-10 shadow-custom-shadow" />,
-    href: "/"
+    href: "/items"
   },
   {
     label: "Mens Ethnic",
     pic: <img src="/womenethnic.jpeg" className="rounded-full h-10 w-10 shadow-custom-shadow" />,
-    href: "/"
+    href: "/items"
   },
   {
     label: "Mens Casuals",
     pic: <img src="/womenethnic.jpeg" className="rounded-full h-10 w-10 shadow-custom-shadow" />,
-    href: "/"
+    href: "/items"
   },
   {
     label: "Kids",
     pic: <img src="/womenethnic.jpeg" className="rounded-full h-10 w-10 shadow-custom-shadow" />,
-    href: "/"
+    href: "/items"
   },
   {
     label: "Toys & Accessories",
     pic: <img src="/womenethnic.jpeg" className="rounded-full h-10 w-10 shadow-custom-shadow" />,
-    href: "/"
+    href: "/items"
   },
   {
     label: "Bags & Footwear",
     pic: <img src="/womenethnic.jpeg" className="rounded-full h-10 w-10 shadow-custom-shadow" />,
-    href: "/"
+    href: "/items"
   }
 ];
 
