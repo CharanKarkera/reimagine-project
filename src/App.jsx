@@ -24,6 +24,7 @@ const App = () => {
 
   const handleVideoEnd = () => {
     setIsVideoEnded(true);
+    sessionStorage.setItem("splashScreenShown", "true");
   };
 
   return (

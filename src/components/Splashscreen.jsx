@@ -1,27 +1,32 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 const SplashScreen = ({ onVideoEnd }) => {
-  const [videoEnded, setVideoEnded] = useState(false);
-
   useEffect(() => {
-    if (videoEnded) {
+    const videoElement = document.getElementById("splashVideo");
+    videoElement.addEventListener("ended", onVideoEnd);
+    videoElement.play().catch((error) => {
+      console.error("Error attempting to play video:", error);
+      // Fallback for browsers that block autoplay
       onVideoEnd();
-      sessionStorage.setItem("splashScreenShown", "true");
-    }
-  }, [videoEnded, onVideoEnd]);
+    });
 
-  const handleVideoEnd = () => {
-    setVideoEnded(true);
-  };
+    return () => {
+      videoElement.removeEventListener("ended", onVideoEnd);
+    };
+  }, [onVideoEnd]);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black">
+    <div className="splash-screen">
       <video
-        src="/splash.mp4"
-        autoPlay
-        onEnded={handleVideoEnd}
-        className="w-full h-full object-cover"
-      />
+        id="splashVideo"
+        className="video"
+        width="100%"
+        height="100%"
+        controls
+      >
+        <source src="/splash.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 };
