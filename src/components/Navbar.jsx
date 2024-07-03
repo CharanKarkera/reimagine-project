@@ -15,27 +15,27 @@ import { FaKitchenSet } from "react-icons/fa6";
 const NAV_ITEMS = [
   {
     label: "Men",
-    href: "/men",
+    href: "/",
     tag: <IoMan className="text-[orange]" />,
   },
   {
     label: "Women",
-    href: "/women",
+    href: "/",
     tag: <IoWomanSharp className="text-[orange]" />,
   },
   {
     label: "Kids",
-    href: "/kids",
+    href: "/",
     tag: <TbMoodKidFilled className="text-[orange]" />,
   },
   {
     label: "Beauty",
-    href: "/beauty",
+    href: "/",
     tag: <FaPaintBrush className="text-[orange]" />,
   },
   {
     label: "Home & Kitchen",
-    href: "/home",
+    href: "/",
     tag: <FaKitchenSet className="text-[orange]" />,
   },
 ];
@@ -53,24 +53,24 @@ const first = [
 const basic = [
   {
     label: "About",
-    href: "/about",
+    href: "/",
     tag: <HiQuestionMarkCircle className="h-[20px] w-[20px]" />,
   },
   {
     label: "Contact",
-    href: "/contact",
+    href: "/",
     tag: <IoCall className="h-[20px] w-[20px]" />,
   },
 ];
 const second = [
   {
     label: "Profile",
-    href: "/profile",
+    href: "/",
     tag: <IoPersonCircleSharp />,
   },
   {
     label: "Cart",
-    href: "/cart",
+    href: "/",
     tag: <FaShoppingCart />,
   },
 ];

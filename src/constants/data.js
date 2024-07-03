@@ -14,7 +14,7 @@ export const categories = [
   {
     label: "Jewellery & Acessories",
     href: "/",
-    pic: "/womenethnic.jpeg",
+    pic: "/jewelery.jpeg",
     caraousel: ["/womenethnic.jpeg", "/logo-1.png", "/logo-2.png"],
   },
   {
@@ -26,37 +26,37 @@ export const categories = [
   {
     label: "Women western",
     href: "/",
-    pic: "/womenethnic.jpeg",
+    pic: "/women1.jpeg",
     caraousel: ["/womenethnic.jpeg", "/logo-1.png", "/logo-2.png"],
   },
   {
     label: "Mens Ethnic",
     href: "/",
-    pic: "/womenethnic.jpeg",
+    pic: "/men2.jpeg",
     caraousel: ["/womenethnic.jpeg", "/logo-1.png", "/logo-2.png"],
   },
   {
     label: "Mens Casuals",
     href: "/",
-    pic: "/womenethnic.jpeg",
+    pic: "/men1.jpeg",
     caraousel: ["/womenethnic.jpeg", "/logo-1.png", "/logo-2.png"],
   },
   {
     label: "Kids",
     href: "/",
-    pic: "/womenethnic.jpeg",
+    pic: "/kids2.jpeg",
     caraousel: ["/womenethnic.jpeg", "/logo-1.png", "/logo-2.png"],
   },
   {
     label: "Toys & Acessories",
     href: "/",
-    pic: "/womenethnic.jpeg",
+    pic: "/kids.jpeg",
     caraousel: ["/womenethnic.jpeg", "/logo-1.png", "/logo-2.png"],
   },
   {
     label: "Bags & Footwear",
     href: "/",
-    pic: "/womenethnic.jpeg",
+    pic: "/items.jpeg",
     caraousel: ["/womenethnic.jpeg", "/logo-1.png", "/logo-2.png"],
   },
 ];
