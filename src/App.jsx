@@ -30,18 +30,18 @@ const App = () => {
     <Router>
       {!isVideoEnded && <SplashScreen onVideoEnd={handleVideoEnd} />}
       {isVideoEnded && (
-       <div>
-       <Navbar />
-       <main>
-         <Routes>
-           <Route path="/" element={<Featured />} />
-           <Route path="/home" element={<Home />} />
-           <Route path="/login" element={<Login />} />
-           <Route path="/signup" element={<Signup />} />
-         </Routes>
-       </main>
-       <Footer />
-     </div>
+        <div>
+          <Navbar />
+          <main>
+            <Routes>
+              <Route path="/home" element={<Home />} />
+              <Route path="/items" element={<Items />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
       )}
     </Router>
   );
