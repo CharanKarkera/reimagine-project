@@ -24,8 +24,10 @@ const Catcard = ({ item }) => {
         </p>
         <p className="text-[gray] font-medium -mt-2 text-xl">{item.desc}</p>
         <div className="flex justify-between items-center pb-2">
-          <p className="text[#800020] font-medium">Rs.{item.price}</p>
-          <s className="text-gray-700 font-semibold">{item.org}</s>
+          <div className="flex gap-2">
+            <p className="text[#800020] font-medium">Rs.{item.price}</p>
+            <s className="text-gray-700 font-semibold">Rs.{item.org}</s>
+          </div>
           <p className="text-[#228B22] font-semibold"> {item.dis}</p>
         </div>
 
