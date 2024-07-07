@@ -88,7 +88,7 @@ const Header = () => {
           {NAV_ITEMS.map((item, index) => (
             <Link
               key={index}
-              href={item.href}
+              to={item.href}
               className="flex items-center gap-3 py-2 w-full justify-start hover:text-[orange] transition duration-300 ease-in-out"
             >
               {item.tag}
@@ -102,7 +102,7 @@ const Header = () => {
           {NAV_ITEMS.slice(2).map((item, index) => (
             <Link
               key={index}
-              href={item.href}
+              to={item.href}
               className="hover:scale-105 hover:text-[orange] transition duration-300 ease-in-out"
             >
               {item.label}
