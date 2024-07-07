@@ -9,7 +9,7 @@ import {
 import { HiQuestionMarkCircle } from "react-icons/hi";
 import { TbMoodKidFilled } from "react-icons/tb";
 import { FaKitchenSet } from "react-icons/fa6";
-
+import { Link } from "react-router-dom";
 const NAV_ITEMS = [
   {
     label: "Profile",
@@ -86,27 +86,27 @@ const Header = () => {
       {mobile && showMenu && (
         <div className="flex flex-col justify-start bg-black w-full px-5 py-3 border-t border-white">
           {NAV_ITEMS.map((item, index) => (
-            <a
+            <Link
               key={index}
               href={item.href}
               className="flex items-center gap-3 py-2 w-full justify-start hover:text-[orange] transition duration-300 ease-in-out"
             >
               {item.tag}
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
       )}
       {!mobile && (
         <div className="flex justify-center w-full pb-5 gap-20">
           {NAV_ITEMS.slice(2).map((item, index) => (
-            <a
+            <Link
               key={index}
               href={item.href}
               className="hover:scale-105 hover:text-[orange] transition duration-300 ease-in-out"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
       )}
