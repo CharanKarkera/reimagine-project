@@ -7,8 +7,8 @@ const Featured = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <div className="flex flex-col p-5 w-full md:w-1/3 h-fit shadow-lg shadow-black fontfam">
-      <div className="bg-white flex rounded-lg border border-gray-300 h-9 items-center gap-5 hover:bg-gray-100 transition-colors duration-300">
+    <div className="flex flex-col p-5 w-full md:w-1/3 h-fit shadow-lg shadow-black comic-neue-bold rounded-xl bg-white">
+      <div className="bg-gray-200 flex rounded-lg border border-gray-300 h-9 items-center gap-5 hover:bg-gray-100 transition-colors duration-300">
         <FaMagnifyingGlass className="text-gray-600 m-2 bg-gray-200" />
         <input
           type="text"
@@ -28,12 +28,12 @@ const Featured = () => {
           </button>
         </div>
       </div>
-      <div className={`mt-8 ${isDropdownOpen ? "block" : "hidden"} md:block`}>
+      <div className={`mt-4 ${isDropdownOpen ? "block" : "hidden"} md:block`}>
         {categories.map((item, index) => (
           <a
             key={index}
             href={item.href}
-            className="flex items-center gap-4 py-2 hover:bg-gray-200 hover:scale-105 transition duration-300 ease-in-out rounded-xl px-2"
+            className="flex items-center gap-4 py-2 hover:bg-gray-200 hover:scale-105 transition duration-300 ease-in-out rounded-xl px-2 border-b"
           >
             <img
               src={item.pic}

@@ -8,15 +8,20 @@ const Catcard = ({ item }) => {
   return (
     <div
       href={item.href}
-      className="h-[500px] w-[330px] md:h-[510px] md:w-[410px] ivory text-[black] fontfam mb-5 shadow-lg shadow-black hover:shadow-2xl hover:shadow-black transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-200"
+      className="h-[400px] w-[290px] md:h-[500px] md:w-[410px] bg-white text-[black] comic-neue-bold mb-5 shadow-lg shadow-black hover:shadow-2xl hover:shadow-black transition duration-300 ease-in-out hover:scale-105 hover:bg-gray-200 rounded-xl flex flex-col justify-end overflow-hidden p-2 hover:p-0"
+      style={{
+        backgroundImage: `url(${item.img})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      <img
+      {/* <img
         src={item.img}
         alt="img"
         className="h-[60%] w-full rounded-t-lg object-fill"
-      />
+      /> */}
 
-      <div className="flex flex-col justify-start m-2 gap-2 p-3">
+      <div className="flex flex-col justify-start gap-2 p-3 bg-white bg-opacity-80 hover:bg-opacity-100">
         <p className="text-[black] font-bold text-2xl overflow-hidden whitespace-nowrap overflow-ellipsis">
           {item.name.length > 10
             ? item.name.substring(0, 30) + "..."

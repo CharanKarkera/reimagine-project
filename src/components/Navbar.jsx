@@ -115,11 +115,11 @@ const Navbar = () => {
   }, [dispRef]);
 
   return (
-    <nav className="flex flex-col justify-center text-xl items-center text-[ivory] radial-gradient">
+    <nav className="flex flex-col justify-center text-xl items-center text-[ivory] bg-black comic-neue-bold">
       {mobile && (
         <div className="flex justify-between items-center w-full relative">
           <img
-            src="/logo.png"
+            src="/logo-1.png"
             alt="Meesho"
             className="order-1 h-[80px] w-[220px]   p-5 hover:scale-105 transition-transform duration-300 ease-in-out"
           />
@@ -150,7 +150,7 @@ const Navbar = () => {
             {!login &&
               first.map((item, index) => (
                 <a
-                  className={`hover:scale-105 hover:text-[orange] transition duration-300 ease-in-out fontfam w-full flex justify-center ${
+                  className={`hover:scale-105 hover:text-[orange] transition duration-300 ease-in-out comic-neue-bold w-full flex justify-center ${
                     index === 0 ? "mod" : ""
                   }`}
                   key={index}
@@ -164,7 +164,7 @@ const Navbar = () => {
             <div className="h-full w-full orange"></div>
           </div>
 
-          <div className="flex flex-col fontfam p-3 space-y-1 relative">
+          <div className="flex flex-col comic-neue-bold p-3 space-y-1 relative">
             {NAV_ITEMS.map((item, index) => (
               <div key={index} className="relative">
                 <a
@@ -186,7 +186,7 @@ const Navbar = () => {
       )}
 
       {!mobile && (
-        <div className="flex justify-between w-full fontfam m-0 p-0">
+        <div className="flex justify-between w-full comic-neue-bold m-0 p-0">
           <div className="flex pl-3 gap-[3px] mt-2 order-1">
             {basic.map((item, index) => (
               <a
@@ -200,11 +200,14 @@ const Navbar = () => {
               </a>
             ))}
           </div>
-          <img
-            src="/logo.png"
-            alt="Meesho"
-            className=" h-[80px] w-[220px] md:h-[7pc] md:w-[19pc] p-5 hover:scale-105 transition-transform duration-300 ease-in-out order-2"
-          />
+          <div className="flex">
+            <img
+              src="/logo-1.png"
+              alt="Meesho"
+              className="w-32 h-32 p-5 hover:scale-105 transition-transform duration-300 ease-in-out order-2"
+            />
+            <span className="comic-neue-bold">meesho</span>
+          </div>
           <div className="flex pr-3  gap-[3px] md:order-3 order-2">
             {login &&
               !mobile &&
@@ -237,7 +240,7 @@ const Navbar = () => {
       )}
       {mobile === false && (
         <div className="flex w-full justify-around p-5">
-          <div className="flex justify-between gap-20 fontfam">
+          <div className="flex justify-between gap-20 comic-neue-bold">
             {NAV_ITEMS.map((item, index) => (
               <a
                 className=" hover:scale-105 hover:text-[orange] transition duration-300 ease-in-out"

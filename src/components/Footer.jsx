@@ -2,11 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="navy-blue relative bottom-0 w-full overflow-hidden">
-      <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-5 pt-10 pb-5 px-10 sm:px-20 md::mx-32 fontfam ">
+    <footer className="bg-black relative bottom-0 w-full overflow-hidden">
+      <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-5 pt-10 pb-5 px-10 sm:px-20 md::mx-32 comic-neue-bold ">
         <div className="text-[orange] flex items-center hover:scale-105 transition duration-300 ease-in-out">
           <img src="/logo-1.png" alt="Meesho" className=" h-10" />
-          <span className="text-xl">Meesho</span>
+          <span className="text-2xl">meesho</span>
         </div>
         <div className="text-[ivory] flex gap-5 sm:gap-10">
           <span className="hover:scale-105 hover:text-[orange] transition duration-300 ease-in-out">
@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="border-[charcoal-gray] mx-10 md::mx-44" />
-      <div className="flex flex-col sm:flex-row justify-between items-center gap-5 pt-5 pb-10 sm:py-10 px-10 sm:px-20 md::mx-28 fontfam ">
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-5 pt-5 pb-10 sm:py-10 px-10 sm:px-20 md::mx-28 comic-neue-bold ">
         <span className="text-[ivory] hover:scale-105 hover:text-[orange] transition ease-out md:w-1/3">
           © 2024 Meesho. All Rights Reserved.
         </span>
