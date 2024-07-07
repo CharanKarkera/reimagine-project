@@ -16,7 +16,6 @@ import Header from "./components/Header";
 import Women from "./pages/Women";
 import Kids from "./pages/Kids";
 
-
 const App = () => {
   const [isVideoEnded, setIsVideoEnded] = useState(false);
 
@@ -37,7 +36,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000); // Simulate a 3-second loading time
+    }, 8000); // Simulate a 3-second loading time
   }, []);
 
   if (loading) {
