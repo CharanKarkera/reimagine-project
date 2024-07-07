@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const SplashScreen = ({ onVideoEnd, gifDuration = 5000 }) => {
+const SplashScreen = ({ onVideoEnd, gifDuration = 8000 }) => {
   useEffect(() => {
     const timer = setTimeout(onVideoEnd, gifDuration);
 
