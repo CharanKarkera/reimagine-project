@@ -11,6 +11,9 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Home from "./pages/Home";
 import Items from "./components/Items";
+import Cloth from "./pages/Cloth";
+import Shoe from "./pages/Shoe";
+import Show from "./pages/Show";
 
 const App = () => {
   const [isVideoEnded, setIsVideoEnded] = useState(false);
@@ -40,6 +43,9 @@ const App = () => {
               <Route path="/items" element={<Items />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
+              <Route path="/cloth" element={<Cloth index={1}/>}/>
+              <Route path="/shoe" element={<Shoe index={0}/>}/>
+              <Route path="/show" element={<Show />} />
             </Routes>
           </main>
           <Footer />
